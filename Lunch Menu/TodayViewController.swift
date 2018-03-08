@@ -107,8 +107,7 @@ class TodayViewController: UIViewController {
         let url = URL(string: urlSoFar)
         let urlString = try! String(contentsOf: url!, encoding: .utf8)
         
-        //submit button is now unclickable and changes text
-        
+                
     }
     
 
