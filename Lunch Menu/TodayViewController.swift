@@ -195,13 +195,12 @@ class TodayViewController: UIViewController {
         submitButton.setTitle("Thank you for the feedback !", for: .normal)
         submitButton.isEnabled = false
         
-        
         //make button re-enable at midnight
-        //???????
-        //???????
-        //???????
-        
-        
+        // true when submitted, click = true
+        //if same day and true, remains disableed, next day true re-enabled
+        //add to user defaults
+        //do it in two methods
+       
     }
     
     
