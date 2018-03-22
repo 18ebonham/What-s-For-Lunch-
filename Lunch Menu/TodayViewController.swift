@@ -17,11 +17,19 @@ class TodayViewController: UIViewController {
     var dessertLike = false
     
     var timer: Timer!
+    var startOfTomorrow: Date!
     
     @IBOutlet weak var soupLabel: UILabel!
     @IBOutlet weak var grillLabel: UILabel!
     @IBOutlet weak var entreeLabel: UILabel!
     @IBOutlet weak var dessertLabel: UILabel!
+    
+    
+    @IBOutlet weak var soupHeart: UIButton!
+    @IBOutlet weak var grillHeart: UIButton!
+    @IBOutlet weak var entreeHeart: UIButton!
+    @IBOutlet weak var dessertHeart: UIButton!
+    
     
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var cafeClosedLabel: UILabel!
@@ -29,11 +37,16 @@ class TodayViewController: UIViewController {
     @IBOutlet weak var todayDateLabel: UILabel!
     var weekMenuDict = [String:[String]]()
     var dayOfWeek = [1:"SUN",2:"MON",3:"TUE",4:"WED",5:"THU",6:"FRI",7:"SAT"]
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let rd = startOfTomorrow {
+            if (Date() > rd){
+                reset()
+            }
+        }
+        
         
         // print today's date on top of screen
         todayDateLabel.text = "............. 🍴\(DateFormatter.localizedString(from: NSDate() as Date, dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.none))🍴 ............."
@@ -135,7 +148,6 @@ class TodayViewController: UIViewController {
         }
         soupLike = !soupLike
     }
-
     
     //grill like button
     @IBAction func grillLikeButton(_ sender: UIButton) {
@@ -196,26 +208,37 @@ class TodayViewController: UIViewController {
         submitButton.setTitle("Thank you for the feedback!", for: .normal)
         submitButton.isEnabled = false
         
-        //disables button until next morning
+        //disables button until next morning 86400
         let now = Date()
-        let startOfTomorrow = Calendar.current.startOfDay(for: now) + 86400
+        startOfTomorrow = Calendar.current.startOfDay(for: now) + 86400
         self.submitButton.isEnabled = false
         timer = Timer.scheduledTimer(timeInterval: startOfTomorrow.timeIntervalSinceNow, target: self, selector: #selector(enableSubmitButton), userInfo: nil, repeats: false)
     }
     
     @objc func enableSubmitButton() {
-        self.submitButton.isEnabled = true
-        self.submitButton.setTitle("SUBMIT", for: .normal)
+        reset()
         timer.invalidate()
     }
     
+    
+    func reset() {
+        soupHeart.setImage(UIImage(named: "heart outline"), for: UIControlState.normal)
+        
+        grillHeart.setImage(UIImage(named: "heart outline"), for: UIControlState.normal)
+        
+        entreeHeart.setImage(UIImage(named: "heart outline"), for: UIControlState.normal)
+        
+        dessertHeart.setImage(UIImage(named: "heart outline"), for: UIControlState.normal)
+        
+        self.submitButton.isEnabled = true
+        self.submitButton.setTitle("SUBMIT", for: .normal)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 

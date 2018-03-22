@@ -249,6 +249,7 @@
                         <outlet property="dessertLabel" destination="mgi-TM-ZjP" id="MXk-xG-e0T"/>
                         <outlet property="entreeLabel" destination="bqc-2K-gJZ" id="cTg-FO-v1n"/>
                         <outlet property="grillLabel" destination="ldE-jN-Psx" id="ZEi-Jh-zFr"/>
+                        <outlet property="soupHeart" destination="fZy-qX-oGX" id="PNm-wl-PM5"/>
                         <outlet property="soupLabel" destination="rHS-cW-uVG" id="XoF-bb-Xhb"/>
                         <outlet property="submitButton" destination="qAh-Z4-ouL" id="mMO-OT-xGr"/>
                         <outlet property="todayDateLabel" destination="Vjk-1u-c4Y" id="2mR-pr-Ei7"/>
