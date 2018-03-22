@@ -16,6 +16,8 @@ class TodayViewController: UIViewController {
     var entreeLike = false
     var dessertLike = false
     
+    var timer: Timer!
+    
     @IBOutlet weak var soupLabel: UILabel!
     @IBOutlet weak var grillLabel: UILabel!
     @IBOutlet weak var entreeLabel: UILabel!
@@ -195,15 +197,16 @@ class TodayViewController: UIViewController {
         submitButton.isEnabled = false
         
         //disables button until next morning
-        var now = Date()
+        let now = Date()
         let startOfTomorrow = Calendar.current.startOfDay(for: now) + 86400
         self.submitButton.isEnabled = false
-        Timer.scheduledTimer(withTimeInterval: startOfTomorrow.timeIntervalSinceNow, repeats: false) {
-            [weak self]timer in
-            self?.submitButton.isEnabled = true
-            self?.submitButton.setTitle("SUBMIT", for: .normal)
-        }
-
+        timer = Timer.scheduledTimer(timeInterval: startOfTomorrow.timeIntervalSinceNow, target: self, selector: #selector(enableSubmitButton), userInfo: nil, repeats: false)
+    }
+    
+    @objc func enableSubmitButton() {
+        self.submitButton.isEnabled = true
+        self.submitButton.setTitle("SUBMIT", for: .normal)
+        timer.invalidate()
     }
     
     
