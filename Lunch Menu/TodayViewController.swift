@@ -15,7 +15,6 @@ class TodayViewController: UIViewController {
     var grillLike = false
     var entreeLike = false
     var dessertLike = false
-    @IBOutlet weak var todayLunchWebView: WKWebView!
     
     @IBOutlet weak var soupLabel: UILabel!
     @IBOutlet weak var grillLabel: UILabel!
@@ -34,7 +33,7 @@ class TodayViewController: UIViewController {
         super.viewDidLoad()
 
         
-        // today's date
+        // print today's date on top of screen
         todayDateLabel.text = "............. 🍴\(DateFormatter.localizedString(from: NSDate() as Date, dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.none))🍴 ............."
 
         // Do any additional setup after loading the view.
@@ -44,7 +43,7 @@ class TodayViewController: UIViewController {
         print(dayOfWeek[dow])
         //dow=7
         if (dow == 1 || dow == 7) {
-            cafeClosedLabel.text = "Café is closed today. \nShowing menu for Monday"
+            cafeClosedLabel.text = "Café is closed today. \n Showing menu for Monday:"
             dow = 2
         }
         
@@ -145,7 +144,7 @@ class TodayViewController: UIViewController {
             sender.setImage(UIImage(named: "heart outline"), for: UIControlState.normal)
         }
         grillLike = !grillLike
-        }
+    }
     
     
     //entree like button
@@ -191,16 +190,20 @@ class TodayViewController: UIViewController {
         let url = URL(string: urlSoFar)
         let urlString = try! String(contentsOf: url!, encoding: .utf8)
         
-        //submit button is now unclickable and changes text
-        submitButton.setTitle("Thank you for the feedback !", for: .normal)
+        //submit button is now unclickable and changes text --> renables button
+        submitButton.setTitle("Thank you for the feedback!", for: .normal)
         submitButton.isEnabled = false
         
-        //make button re-enable at midnight
-        // true when submitted, click = true
-        //if same day and true, remains disableed, next day true re-enabled
-        //add to user defaults
-        //do it in two methods
-       
+        //disables button until next morning
+        var now = Date()
+        let startOfTomorrow = Calendar.current.startOfDay(for: now) + 86400
+        self.submitButton.isEnabled = false
+        Timer.scheduledTimer(withTimeInterval: startOfTomorrow.timeIntervalSinceNow, repeats: false) {
+            [weak self]timer in
+            self?.submitButton.isEnabled = true
+            self?.submitButton.setTitle("SUBMIT", for: .normal)
+        }
+
     }
     
     

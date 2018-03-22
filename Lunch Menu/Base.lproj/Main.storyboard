@@ -135,36 +135,91 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Soup: ________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHS-cW-uVG">
-                                <rect key="frame" x="16" y="166" width="299" height="35"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cS2-8j-eh5">
+                                <rect key="frame" x="16" y="188" width="343.5" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grill: _________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldE-jN-Psx">
-                                <rect key="frame" x="16" y="271" width="299" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Entree: _______________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqc-2K-gJZ">
-                                <rect key="frame" x="16" y="377" width="299" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="6UN-Ls-q1N">
+                                        <rect key="frame" x="0.0" y="0.0" width="298.5" height="350"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Soup: ________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHS-cW-uVG">
+                                                <rect key="frame" x="0.0" y="0.0" width="298.5" height="33.5"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Grill: _________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldE-jN-Psx">
+                                                <rect key="frame" x="0.0" y="116.5" width="298.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Entree: _______________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqc-2K-gJZ">
+                                                <rect key="frame" x="0.0" y="222" width="298.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Dessert: ______________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgi-TM-ZjP">
+                                                <rect key="frame" x="0.0" y="327.5" width="298.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="I3b-kf-69j" userLabel="♡ Stack View">
+                                        <rect key="frame" x="308.5" y="0.0" width="35" height="350"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZy-qX-oGX">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                <state key="normal" image="heart outline">
+                                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="soupLikeButton:" destination="8oJ-GE-RTb" eventType="touchUpInside" id="Rha-4y-sgw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ger-Xw-Y5D">
+                                                <rect key="frame" x="0.0" y="105" width="35" height="35"/>
+                                                <state key="normal" image="heart outline">
+                                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="grillLikeButton:" destination="8oJ-GE-RTb" eventType="touchUpInside" id="ARH-tF-aT2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoR-Fz-SSJ">
+                                                <rect key="frame" x="0.0" y="210" width="35" height="35"/>
+                                                <state key="normal" image="heart outline">
+                                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="entreeLikeButton:" destination="8oJ-GE-RTb" eventType="touchUpInside" id="CLi-0T-0R5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz9-11-xwT">
+                                                <rect key="frame" x="0.0" y="315" width="35" height="35"/>
+                                                <state key="normal" image="heart outline">
+                                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="dessertLikeButton:" destination="8oJ-GE-RTb" eventType="touchUpInside" id="ccc-dK-rhf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suT-9Q-mwL">
-                                <rect key="frame" x="22" y="114" width="332" height="54"/>
+                                <rect key="frame" x="16" y="112" width="343" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="25"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="22"/>
+                                <color key="textColor" red="0.92018854620000001" green="0.59422647949999996" blue="0.59912848470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAh-Z4-ouL">
-                                <rect key="frame" x="154" y="550" width="67" height="32"/>
+                                <rect key="frame" x="154" y="560" width="67" height="32"/>
                                 <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
                                 <state key="normal" title="SUBMIT">
                                     <color key="titleColor" red="0.92018854620000001" green="0.59422647949999996" blue="0.59912848470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -173,55 +228,6 @@
                                     <action selector="submitButton:" destination="8oJ-GE-RTb" eventType="touchUpInside" id="fL0-V6-pfa"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="I3b-kf-69j" userLabel="♡ Stack View">
-                                <rect key="frame" x="323" y="166" width="35" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZy-qX-oGX">
-                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
-                                        <state key="normal" image="heart outline">
-                                            <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="soupLikeButton:" destination="8oJ-GE-RTb" eventType="touchUpInside" id="Rha-4y-sgw"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ger-Xw-Y5D">
-                                        <rect key="frame" x="0.0" y="105" width="35" height="35"/>
-                                        <state key="normal" image="heart outline">
-                                            <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="grillLikeButton:" destination="8oJ-GE-RTb" eventType="touchUpInside" id="ARH-tF-aT2"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoR-Fz-SSJ">
-                                        <rect key="frame" x="0.0" y="210" width="35" height="35"/>
-                                        <state key="normal" image="heart outline">
-                                            <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="entreeLikeButton:" destination="8oJ-GE-RTb" eventType="touchUpInside" id="CLi-0T-0R5"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz9-11-xwT">
-                                        <rect key="frame" x="0.0" y="315" width="35" height="35"/>
-                                        <state key="normal" image="heart outline">
-                                            <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="dessertLikeButton:" destination="8oJ-GE-RTb" eventType="touchUpInside" id="ccc-dK-rhf"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dessert: ______________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgi-TM-ZjP">
-                                <rect key="frame" x="16" y="480" width="299" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="what's for lunch (color)" translatesAutoresizingMaskIntoConstraints="NO" id="Xm8-Gi-r3X">
                                 <rect key="frame" x="0.0" y="31" width="375" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -230,7 +236,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="yb9-xL-OTW" firstAttribute="bottom" secondItem="qAh-Z4-ouL" secondAttribute="bottom" constant="36" id="Ewy-Ba-Euw"/>
+                            <constraint firstItem="yb9-xL-OTW" firstAttribute="bottom" secondItem="qAh-Z4-ouL" secondAttribute="bottom" constant="26" id="Ewy-Ba-Euw"/>
                             <constraint firstItem="qAh-Z4-ouL" firstAttribute="centerX" secondItem="jKW-A7-7cI" secondAttribute="centerX" id="fd9-Bx-dMw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yb9-xL-OTW"/>
@@ -250,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mg-Q5-kic" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-386.39999999999998" y="-415.14242878560725"/>
+            <point key="canvasLocation" x="-388" y="-350.37481259370315"/>
         </scene>
         <!--lunchMenu-->
         <scene sceneID="xkT-SS-UI4">
@@ -269,7 +275,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wr7-IQ-4cg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1282" y="-95"/>
+            <point key="canvasLocation" x="-1791" y="363"/>
         </scene>
         <!--Wait What Is View Controller-->
         <scene sceneID="zOv-nl-74q">
@@ -280,44 +286,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="what is what is what's for lunch" translatesAutoresizingMaskIntoConstraints="NO" id="3RP-gM-YT7">
-                                <rect key="frame" x="0.0" y="20" width="375" height="128"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hartley '18   &amp;   Sho Sho '19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4I-yO-TvG">
-                                <rect key="frame" x="12" y="519" width="351" height="31"/>
+                                <rect key="frame" x="12" y="460" width="351" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sho" translatesAutoresizingMaskIntoConstraints="NO" id="34W-FN-iEt">
-                                <rect key="frame" x="244" y="541" width="63" height="67"/>
+                                <rect key="frame" x="246" y="481" width="63" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="enjoy our app and enjoy your lunch!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5a2-35-bbO">
-                                <rect key="frame" x="16" y="480" width="343" height="31"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hart" translatesAutoresizingMaskIntoConstraints="NO" id="kzu-Pe-uDI">
+                                <rect key="frame" x="49" y="481" width="67" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWh-wV-sQS">
+                                <rect key="frame" x="16" y="206" width="343" height="255"/>
+                                <string key="text">What's For Lunch is an app designed to give the Castilleja community an easy way to access the lunch menu on their phone. You can ‘heart’ the lunch items that you enjoyed eating each day. This rating system was requested by the kitchen staff and we worked with them  to implement it. 
+
+enjoy our app and enjoy your lunch! </string>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hart" translatesAutoresizingMaskIntoConstraints="NO" id="kzu-Pe-uDI">
-                                <rect key="frame" x="54" y="541" width="67" height="67"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="App developed during the 2017-2018 Castilleja school year for AT CS. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5a2-35-bbO">
+                                <rect key="frame" x="16" y="591" width="343" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWh-wV-sQS">
-                                <rect key="frame" x="16" y="156" width="343" height="316"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">What's For Lunch is an app designed to give the Castilleja community an easy way to access the lunch menu on their phone. You can also ‘heart’ the items that you liked for each day. We worked with the kitchen staff to implement this rating system, which they requested. 
-
-We made this app during the 2017-2018 school year for AT CS. 
-</string>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bWh-wV-sQS" firstAttribute="centerY" secondItem="wQC-uV-3s6" secondAttribute="centerY" id="3o9-f8-IoP"/>
+                            <constraint firstItem="bWh-wV-sQS" firstAttribute="leading" secondItem="fWE-nu-VNb" secondAttribute="leading" constant="16" id="HLw-Ih-wX0"/>
+                            <constraint firstItem="fWE-nu-VNb" firstAttribute="trailing" secondItem="bWh-wV-sQS" secondAttribute="trailing" constant="16" id="eag-Hs-6U5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fWE-nu-VNb"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="gpw-hJ-OZ7"/>
@@ -327,7 +336,7 @@ We made this app during the 2017-2018 school year for AT CS.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBy-y6-f6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-388" y="1135"/>
+            <point key="canvasLocation" x="-388" y="1089.8050974512744"/>
         </scene>
     </scenes>
     <resources>
