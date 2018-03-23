@@ -41,6 +41,7 @@ class TodayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         if let rd = startOfTomorrow {
             if (Date() > rd){
                 reset()
@@ -223,13 +224,10 @@ class TodayViewController: UIViewController {
     
     func reset() {
         soupHeart.setImage(UIImage(named: "heart outline"), for: UIControlState.normal)
-        
         grillHeart.setImage(UIImage(named: "heart outline"), for: UIControlState.normal)
-        
         entreeHeart.setImage(UIImage(named: "heart outline"), for: UIControlState.normal)
-        
         dessertHeart.setImage(UIImage(named: "heart outline"), for: UIControlState.normal)
-        
+    
         self.submitButton.isEnabled = true
         self.submitButton.setTitle("SUBMIT", for: .normal)
     }
