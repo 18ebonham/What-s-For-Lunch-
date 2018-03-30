@@ -59,7 +59,7 @@ class TodayViewController: UIViewController {
         print(dayOfWeek[dow])
         //dow=7
         if (dow == 1 || dow == 7) {
-            cafeClosedLabel.text = "Café is closed today. \n Showing menu for Monday:"
+            cafeClosedLabel.text = "Café is closed today. Showing menu for Monday:"
             dow = 2
         }
         

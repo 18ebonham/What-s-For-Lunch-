@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -118,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8SF-j1-TDW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-387" y="363"/>
+            <point key="canvasLocation" x="-730" y="789"/>
         </scene>
         <!--Today-->
         <scene sceneID="yLd-p5-xUI">
@@ -128,18 +129,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="............. 🍴Month Day, Year🍴 ............." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjk-1u-c4Y">
-                                <rect key="frame" x="16" y="88" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="............. 🍴Month Day, Year🍴 ............." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjk-1u-c4Y">
+                                <rect key="frame" x="48" y="88" width="279.5" height="19"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cS2-8j-eh5">
-                                <rect key="frame" x="16" y="188" width="343.5" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cS2-8j-eh5" userLabel="Menu Stack View">
+                                <rect key="frame" x="16" y="158.5" width="343.5" height="350"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="6UN-Ls-q1N">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="6UN-Ls-q1N">
                                         <rect key="frame" x="0.0" y="0.0" width="298.5" height="350"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Soup: ________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHS-cW-uVG">
@@ -168,10 +167,10 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="I3b-kf-69j" userLabel="♡ Stack View">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="I3b-kf-69j" userLabel="♡ Stack View">
                                         <rect key="frame" x="308.5" y="0.0" width="35" height="350"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZy-qX-oGX">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZy-qX-oGX">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
                                                 <state key="normal" image="heart outline">
                                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -180,7 +179,7 @@
                                                     <action selector="soupLikeButton:" destination="8oJ-GE-RTb" eventType="touchUpInside" id="Rha-4y-sgw"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ger-Xw-Y5D">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ger-Xw-Y5D">
                                                 <rect key="frame" x="0.0" y="105" width="35" height="35"/>
                                                 <state key="normal" image="heart outline">
                                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -189,7 +188,7 @@
                                                     <action selector="grillLikeButton:" destination="8oJ-GE-RTb" eventType="touchUpInside" id="ARH-tF-aT2"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoR-Fz-SSJ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoR-Fz-SSJ">
                                                 <rect key="frame" x="0.0" y="210" width="35" height="35"/>
                                                 <state key="normal" image="heart outline">
                                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -198,7 +197,7 @@
                                                     <action selector="entreeLikeButton:" destination="8oJ-GE-RTb" eventType="touchUpInside" id="CLi-0T-0R5"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz9-11-xwT">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz9-11-xwT">
                                                 <rect key="frame" x="0.0" y="315" width="35" height="35"/>
                                                 <state key="normal" image="heart outline">
                                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -211,8 +210,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suT-9Q-mwL">
-                                <rect key="frame" x="16" y="112" width="343" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suT-9Q-mwL">
+                                <rect key="frame" x="16" y="112" width="343" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="22"/>
                                 <color key="textColor" red="0.92018854620000001" green="0.59422647949999996" blue="0.59912848470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -228,16 +227,25 @@
                                     <action selector="submitButton:" destination="8oJ-GE-RTb" eventType="touchUpInside" id="fL0-V6-pfa"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="what's for lunch (color)" translatesAutoresizingMaskIntoConstraints="NO" id="Xm8-Gi-r3X">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="what's for lunch (color)" translatesAutoresizingMaskIntoConstraints="NO" id="Xm8-Gi-r3X">
                                 <rect key="frame" x="0.0" y="31" width="375" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Xm8-Gi-r3X" secondAttribute="height" multiplier="375:58" id="PVw-CD-hqy"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="cS2-8j-eh5" firstAttribute="centerX" secondItem="jKW-A7-7cI" secondAttribute="centerX" id="Cdd-6D-1RA"/>
                             <constraint firstItem="yb9-xL-OTW" firstAttribute="bottom" secondItem="qAh-Z4-ouL" secondAttribute="bottom" constant="26" id="Ewy-Ba-Euw"/>
+                            <constraint firstItem="Vjk-1u-c4Y" firstAttribute="centerX" secondItem="jKW-A7-7cI" secondAttribute="centerX" id="Xad-OA-mFe"/>
+                            <constraint firstItem="cS2-8j-eh5" firstAttribute="centerY" secondItem="jKW-A7-7cI" secondAttribute="centerY" id="dvW-UK-2Aw"/>
+                            <constraint firstItem="Xm8-Gi-r3X" firstAttribute="leading" secondItem="yb9-xL-OTW" secondAttribute="leading" id="fF9-K5-z6z"/>
+                            <constraint firstItem="Xm8-Gi-r3X" firstAttribute="trailing" secondItem="yb9-xL-OTW" secondAttribute="trailing" id="fOT-8W-xSN"/>
                             <constraint firstItem="qAh-Z4-ouL" firstAttribute="centerX" secondItem="jKW-A7-7cI" secondAttribute="centerX" id="fd9-Bx-dMw"/>
+                            <constraint firstItem="Xm8-Gi-r3X" firstAttribute="top" secondItem="yb9-xL-OTW" secondAttribute="top" constant="11" id="o5V-MV-d6x"/>
+                            <constraint firstItem="Vjk-1u-c4Y" firstAttribute="top" secondItem="yb9-xL-OTW" secondAttribute="top" constant="68" id="uv4-Xx-1iu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yb9-xL-OTW"/>
                     </view>
@@ -257,7 +265,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mg-Q5-kic" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-388" y="-350.37481259370315"/>
+            <point key="canvasLocation" x="-730" y="7"/>
         </scene>
         <!--lunchMenu-->
         <scene sceneID="xkT-SS-UI4">
@@ -286,9 +294,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="what is what is what's for lunch" translatesAutoresizingMaskIntoConstraints="NO" id="3RP-gM-YT7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="what is what is what's for lunch" translatesAutoresizingMaskIntoConstraints="NO" id="3RP-gM-YT7">
                                 <rect key="frame" x="0.0" y="40" width="375" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3RP-gM-YT7" secondAttribute="height" multiplier="375:128" id="bz0-zz-Daf"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hartley '18   &amp;   Sho Sho '19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4I-yO-TvG">
                                 <rect key="frame" x="12" y="460" width="351" height="31"/>
@@ -297,36 +307,45 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sho" translatesAutoresizingMaskIntoConstraints="NO" id="34W-FN-iEt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="sho" translatesAutoresizingMaskIntoConstraints="NO" id="34W-FN-iEt">
                                 <rect key="frame" x="246" y="481" width="63" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="34W-FN-iEt" secondAttribute="height" multiplier="67:67" id="2qA-fr-sPK"/>
+                                    <constraint firstAttribute="height" constant="67" id="9Jn-nx-wcM"/>
+                                    <constraint firstAttribute="width" constant="67" id="an5-2S-0RC"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hart" translatesAutoresizingMaskIntoConstraints="NO" id="kzu-Pe-uDI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="hart" translatesAutoresizingMaskIntoConstraints="NO" id="kzu-Pe-uDI">
                                 <rect key="frame" x="49" y="481" width="67" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kzu-Pe-uDI" secondAttribute="height" multiplier="1:1" id="Kpw-uN-T2T"/>
+                                    <constraint firstAttribute="height" constant="67" id="PiD-4P-7bc"/>
+                                    <constraint firstAttribute="width" constant="67" id="gkC-fI-hdp"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWh-wV-sQS">
-                                <rect key="frame" x="16" y="206" width="343" height="255"/>
-                                <string key="text">What's For Lunch is an app designed to give the Castilleja community an easy way to access the lunch menu on their phone. You can ‘heart’ the lunch items that you enjoyed eating each day. This rating system was requested by the kitchen staff and we worked with them  to implement it. 
-
-enjoy our app and enjoy your lunch! </string>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="App developed during the 2017-2018 Castilleja school year for AT CS. Special thanks to Ms. Grayson and Mr. Lowell." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5a2-35-bbO">
+                                <rect key="frame" x="30" y="584" width="316" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="App developed during the 2017-2018 Castilleja school year for AT CS. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5a2-35-bbO">
-                                <rect key="frame" x="16" y="591" width="343" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOZ-HN-Amv">
+                                <rect key="frame" x="16" y="194" width="343" height="258"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="11"/>
+                                <string key="text">What's For Lunch is an app designed to give the Castilleja community an easy way to access the lunch menu on their phone. You can ‘heart’ the lunch items that you enjoyed eating each day. This rating system was requested by the kitchen staff and we worked with them to implement it.
+
+enjoy our app and enjoy your lunch!</string>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bWh-wV-sQS" firstAttribute="centerY" secondItem="wQC-uV-3s6" secondAttribute="centerY" id="3o9-f8-IoP"/>
-                            <constraint firstItem="bWh-wV-sQS" firstAttribute="leading" secondItem="fWE-nu-VNb" secondAttribute="leading" constant="16" id="HLw-Ih-wX0"/>
-                            <constraint firstItem="fWE-nu-VNb" firstAttribute="trailing" secondItem="bWh-wV-sQS" secondAttribute="trailing" constant="16" id="eag-Hs-6U5"/>
+                            <constraint firstItem="3RP-gM-YT7" firstAttribute="leading" secondItem="fWE-nu-VNb" secondAttribute="leading" id="gg7-l8-zcJ"/>
+                            <constraint firstItem="3RP-gM-YT7" firstAttribute="top" secondItem="fWE-nu-VNb" secondAttribute="top" constant="20" id="vYK-H4-IiG"/>
+                            <constraint firstItem="3RP-gM-YT7" firstAttribute="trailing" secondItem="fWE-nu-VNb" secondAttribute="trailing" id="zeK-A9-W0M"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fWE-nu-VNb"/>
                     </view>
@@ -337,7 +356,7 @@ enjoy our app and enjoy your lunch! </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBy-y6-f6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-388" y="1089.8050974512744"/>
+            <point key="canvasLocation" x="-1791.2" y="1222.9385307346329"/>
         </scene>
     </scenes>
     <resources>
