@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,12 +19,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whats for lunch (opening screen)" translatesAutoresizingMaskIntoConstraints="NO" id="fvh-hp-zFm">
-                                <rect key="frame" x="25" y="100" width="324" height="402"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whats for lunch (opening screen)" translatesAutoresizingMaskIntoConstraints="NO" id="fvh-hp-zFm">
+                                <rect key="frame" x="26" y="133" width="323" height="401"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fvh-hp-zFm" secondAttribute="height" multiplier="54:67" id="Vdb-KM-kuu"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fvh-hp-zFm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="X3o-5H-nkH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fvh-hp-zFm" secondAttribute="trailing" constant="26" id="Y3r-go-bvs"/>
+                            <constraint firstItem="fvh-hp-zFm" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZJE-jV-zkb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
