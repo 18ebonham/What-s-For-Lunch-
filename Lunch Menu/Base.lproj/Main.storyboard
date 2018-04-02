@@ -30,136 +30,208 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tuesday Food" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPq-yy-Xe1">
-                                <rect key="frame" x="72" y="169" width="288" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wednesday Food" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Er-GD-SbQ">
-                                <rect key="frame" x="71" y="293" width="287" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monday Food" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29i-sh-46u">
-                                <rect key="frame" x="72" y="43" width="287" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friday Food" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XF4-JU-Nnf">
-                                <rect key="frame" x="71" y="535" width="287" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="rZR-kU-rnG" userLabel="Day Stack View">
-                                <rect key="frame" x="16" y="53" width="51" height="561"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="what's for lunch (color)" translatesAutoresizingMaskIntoConstraints="NO" id="NGX-f0-hAC">
+                                <rect key="frame" x="127" y="29" width="121" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NGX-f0-hAC" secondAttribute="height" multiplier="61:8" id="yNq-AM-0gw"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="n4l-ql-ncJ" userLabel="lunch Stack View">
+                                <rect key="frame" x="15" y="58.5" width="331" height="550"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6pb-hD-KAv" userLabel="M Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="48.5" height="73.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jzC-ig-iGn" userLabel="mon Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="90"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDD-SK-h7e">
-                                                <rect key="frame" x="0.0" y="0.0" width="48.5" height="56.5"/>
-                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="51"/>
-                                                <color key="textColor" red="0.91620773079999995" green="0.59432810540000003" blue="0.5950841308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Joo-kc-V4Z">
-                                                <rect key="frame" x="0.0" y="56.5" width="48.5" height="17"/>
-                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
-                                                <color key="textColor" red="0.91620773077011108" green="0.59432810544967651" blue="0.59508413076400757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="twn-Gb-heJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="90"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDD-SK-h7e">
+                                                        <rect key="frame" x="0.5" y="0.0" width="50" height="57"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="57" id="Pb6-Xz-RMd"/>
+                                                            <constraint firstAttribute="width" constant="50" id="gZj-1M-MWp"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="51"/>
+                                                        <color key="textColor" red="0.91620773079999995" green="0.59432810540000003" blue="0.5950841308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Joo-kc-V4Z">
+                                                        <rect key="frame" x="10.5" y="57" width="30" height="33"/>
+                                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
+                                                        <color key="textColor" red="0.91620773077011108" green="0.59432810544967651" blue="0.59508413076400757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday Food" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29i-sh-46u">
+                                                <rect key="frame" x="56" y="0.0" width="275" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="275" id="vjk-7K-GZi" userLabel="width = 285"/>
+                                                    <constraint firstAttribute="height" constant="90" id="ySb-1d-qHW" userLabel="height = 100"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="F9b-ut-1Ro" userLabel="T Stack View">
-                                        <rect key="frame" x="0.0" y="118.5" width="37" height="78"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uBT-rw-bcz" userLabel="tue Stack View">
+                                        <rect key="frame" x="0.0" y="115" width="331" height="90"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUw-uL-Mlb">
-                                                <rect key="frame" x="0.0" y="0.0" width="37" height="61"/>
-                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="55"/>
-                                                <color key="textColor" red="0.62217527630000002" green="0.77436840529999995" blue="0.91184157129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tues" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uN-BJ-cFN">
-                                                <rect key="frame" x="0.0" y="61" width="37" height="17"/>
-                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
-                                                <color key="textColor" red="0.62217527627944946" green="0.77436840534210205" blue="0.91184157133102417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MUO-WM-ulL">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="90"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUw-uL-Mlb">
+                                                        <rect key="frame" x="7" y="0.0" width="37" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="61" id="8k8-oW-z4Y"/>
+                                                            <constraint firstAttribute="width" constant="37" id="fLf-mg-v2C"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="55"/>
+                                                        <color key="textColor" red="0.62217527630000002" green="0.77436840529999995" blue="0.91184157129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tues" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uN-BJ-cFN">
+                                                        <rect key="frame" x="11" y="61" width="29.5" height="29"/>
+                                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
+                                                        <color key="textColor" red="0.62217527627944946" green="0.77436840534210205" blue="0.91184157133102417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tuesday Food" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPq-yy-Xe1">
+                                                <rect key="frame" x="56" y="0.0" width="275" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="275" id="FtF-wJ-Kff"/>
+                                                    <constraint firstAttribute="height" constant="90" id="eWO-mZ-jDo" userLabel="height = 100"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="fy7-pM-P2E" userLabel="W Stack View">
-                                        <rect key="frame" x="0.0" y="241.5" width="51" height="73.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9bw-BD-eKJ" userLabel="wed Stack View">
+                                        <rect key="frame" x="0.0" y="230" width="331" height="90"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBm-7s-8LY">
-                                                <rect key="frame" x="0.0" y="0.0" width="51" height="56.5"/>
-                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="51"/>
-                                                <color key="textColor" red="0.99909597640000003" green="0.89787918330000005" blue="0.59822195769999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpl-im-cFg">
-                                                <rect key="frame" x="0.0" y="56.5" width="29.5" height="17"/>
-                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
-                                                <color key="textColor" red="0.99909597635269165" green="0.89787918329238892" blue="0.59822195768356323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="buy-tA-vcT">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="90"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBm-7s-8LY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="56.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="56.5" id="8Aq-wR-DyK"/>
+                                                            <constraint firstAttribute="width" constant="51" id="OPN-JJ-Qlb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="49"/>
+                                                        <color key="textColor" red="0.99909597640000003" green="0.89787918330000005" blue="0.59822195769999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpl-im-cFg">
+                                                        <rect key="frame" x="11" y="56.5" width="29.5" height="33.5"/>
+                                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
+                                                        <color key="textColor" red="0.99909597635269165" green="0.89787918329238892" blue="0.59822195768356323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="51" id="sSP-Hw-5ob"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday Food" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Er-GD-SbQ">
+                                                <rect key="frame" x="56" y="0.0" width="275" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="275" id="VeE-4G-ftA"/>
+                                                    <constraint firstAttribute="height" constant="90" id="eLI-51-h2y" userLabel="height = 100"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Jph-ek-vJp" userLabel="T Stack View">
-                                        <rect key="frame" x="0.0" y="360" width="37" height="78"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ByI-XH-XMo" userLabel="thu Stack View">
+                                        <rect key="frame" x="0.0" y="345" width="331" height="90"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXs-zX-V1d">
-                                                <rect key="frame" x="0.0" y="0.0" width="37" height="61"/>
-                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="55"/>
-                                                <color key="textColor" red="0.71452546120000004" green="0.84248942140000005" blue="0.65996539590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ck7-ET-KWB">
-                                                <rect key="frame" x="0.0" y="61" width="27" height="17"/>
-                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
-                                                <color key="textColor" red="0.71452546119689941" green="0.84248942136764526" blue="0.6599653959274292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="262-Sb-E9s">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="90"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXs-zX-V1d">
+                                                        <rect key="frame" x="7" y="0.0" width="37" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="37" id="RHx-8y-ADU"/>
+                                                            <constraint firstAttribute="height" constant="61" id="rgM-It-faf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="55"/>
+                                                        <color key="textColor" red="0.71452546120000004" green="0.84248942140000005" blue="0.65996539590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ck7-ET-KWB">
+                                                        <rect key="frame" x="12" y="61" width="27" height="29"/>
+                                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
+                                                        <color key="textColor" red="0.71452546119689941" green="0.84248942136764526" blue="0.6599653959274292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday Food" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InR-rr-ULg">
+                                                <rect key="frame" x="56" y="0.0" width="275" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="n3A-9H-rv5" userLabel="height = 100"/>
+                                                    <constraint firstAttribute="width" constant="275" id="ujX-6A-bRN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="eQQ-Dg-kkz" userLabel="F Stack View">
-                                        <rect key="frame" x="0.0" y="483" width="34" height="78"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bHn-kw-NPZ" userLabel="fri Stack View">
+                                        <rect key="frame" x="0.0" y="460" width="331" height="90"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEe-Zh-NI9">
-                                                <rect key="frame" x="0.0" y="0.0" width="34" height="61"/>
-                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="55"/>
-                                                <color key="textColor" red="0.83512079719999999" green="0.6523580551" blue="0.74228304619999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvo-tz-nbk">
-                                                <rect key="frame" x="0.0" y="61" width="20" height="17"/>
-                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
-                                                <color key="textColor" red="0.8351207971572876" green="0.65235805511474609" blue="0.74228304624557495" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9MF-08-lic">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="90"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEe-Zh-NI9">
+                                                        <rect key="frame" x="8.5" y="0.0" width="34" height="61"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="61" id="Owe-PG-mHC"/>
+                                                            <constraint firstAttribute="width" constant="34" id="Sjo-Rh-iQa"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="55"/>
+                                                        <color key="textColor" red="0.83512079719999999" green="0.6523580551" blue="0.74228304619999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvo-tz-nbk">
+                                                        <rect key="frame" x="15.5" y="61" width="20" height="29"/>
+                                                        <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
+                                                        <color key="textColor" red="0.8351207971572876" green="0.65235805511474609" blue="0.74228304624557495" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday Food" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XF4-JU-Nnf">
+                                                <rect key="frame" x="56" y="0.0" width="275" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="fAc-xg-Utg" userLabel="height = 100"/>
+                                                    <constraint firstAttribute="width" constant="275" id="gIz-o4-1f3" userLabel="width = 285"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thursday Food" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InR-rr-ULg">
-                                <rect key="frame" x="71" y="411" width="287" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="rZR-kU-rnG" firstAttribute="leading" secondItem="qfk-EL-WPT" secondAttribute="leading" constant="16" id="geA-Or-HOX"/>
-                            <constraint firstItem="rZR-kU-rnG" firstAttribute="centerY" secondItem="VbS-hP-ocK" secondAttribute="centerY" id="mQP-yL-ceV"/>
+                            <constraint firstItem="NGX-f0-hAC" firstAttribute="leading" secondItem="qfk-EL-WPT" secondAttribute="leading" constant="127" id="Kj1-AD-1uc"/>
+                            <constraint firstItem="NGX-f0-hAC" firstAttribute="top" secondItem="qfk-EL-WPT" secondAttribute="top" constant="9" id="U2C-Rq-GCi"/>
+                            <constraint firstItem="n4l-ql-ncJ" firstAttribute="leading" secondItem="qfk-EL-WPT" secondAttribute="leading" constant="15" id="fab-ZK-aDN"/>
+                            <constraint firstItem="n4l-ql-ncJ" firstAttribute="centerY" secondItem="VbS-hP-ocK" secondAttribute="centerY" id="jb8-T3-tQl"/>
+                            <constraint firstItem="qfk-EL-WPT" firstAttribute="trailing" secondItem="NGX-f0-hAC" secondAttribute="trailing" constant="127" id="nbp-kR-1FP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qfk-EL-WPT"/>
                     </view>
@@ -174,7 +246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8SF-j1-TDW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-730.39999999999998" y="788.45577211394311"/>
+            <point key="canvasLocation" x="-1036" y="846.9265367316342"/>
         </scene>
         <!--Today-->
         <scene sceneID="yLd-p5-xUI">
@@ -324,7 +396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mg-Q5-kic" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-730" y="7"/>
+            <point key="canvasLocation" x="-1035" y="-77"/>
         </scene>
         <!--lunchMenu-->
         <scene sceneID="xkT-SS-UI4">
