@@ -36,8 +36,8 @@
                                     <constraint firstAttribute="width" secondItem="NGX-f0-hAC" secondAttribute="height" multiplier="61:8" id="yNq-AM-0gw"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4l-ql-ncJ" userLabel="lunch Stack View">
-                                <rect key="frame" x="15" y="49.5" width="331" height="568"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="n4l-ql-ncJ" userLabel="lunch Stack View">
+                                <rect key="frame" x="15" y="83.5" width="331" height="500"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jzC-ig-iGn" userLabel="mon Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="331" height="100"/>
@@ -76,7 +76,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uBT-rw-bcz" userLabel="tue Stack View">
-                                        <rect key="frame" x="0.0" y="117" width="331" height="100"/>
+                                        <rect key="frame" x="0.0" y="100" width="331" height="100"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MUO-WM-ulL">
                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="100"/>
@@ -112,7 +112,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9bw-BD-eKJ" userLabel="wed Stack View">
-                                        <rect key="frame" x="0.0" y="234" width="331" height="100"/>
+                                        <rect key="frame" x="0.0" y="200" width="331" height="100"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="buy-tA-vcT">
                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="100"/>
@@ -151,7 +151,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ByI-XH-XMo" userLabel="thu Stack View">
-                                        <rect key="frame" x="0.0" y="351" width="331" height="100"/>
+                                        <rect key="frame" x="0.0" y="300" width="331" height="100"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="262-Sb-E9s">
                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="100"/>
@@ -187,7 +187,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bHn-kw-NPZ" userLabel="fri Stack View">
-                                        <rect key="frame" x="0.0" y="468" width="331" height="100"/>
+                                        <rect key="frame" x="0.0" y="400" width="331" height="100"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9MF-08-lic">
                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="100"/>
@@ -434,37 +434,34 @@
                                     <constraint firstAttribute="width" secondItem="3RP-gM-YT7" secondAttribute="height" multiplier="375:128" id="bz0-zz-Daf"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="App developed during the 2017-2018 Castilleja school year for AT CS. Special thanks to Ms. Greyson and Mr. Lowell." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5a2-35-bbO">
-                                <rect key="frame" x="30" y="584" width="316" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App developed during the 2017-2018 Castilleja school year for AT CS. Special thanks to Ms. Greyson and Mr. Lowell." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5a2-35-bbO">
+                                <rect key="frame" x="20" y="483" width="335" height="24.5"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOZ-HN-Amv">
-                                <rect key="frame" x="16" y="194" width="343" height="258"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOZ-HN-Amv">
+                                <rect key="frame" x="16" y="194" width="343" height="179.5"/>
                                 <string key="text">What's For Lunch is an app designed to give the Castilleja community an easy way to access the lunch menu on their phone. You can ‘heart’ the lunch items that you enjoyed eating each day. This rating system was requested by the kitchen staff and we worked with them to implement it.
 
 enjoy our app and enjoy your lunch!</string>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ySW-kd-49p" userLabel="hart and sho Stack View">
-                                <rect key="frame" x="32" y="460" width="310.5" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ySW-kd-49p" userLabel="hart and sho Stack View">
+                                <rect key="frame" x="32" y="383.5" width="310.5" height="89.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hartley '18   &amp;   Sho Sho '19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4I-yO-TvG">
-                                        <rect key="frame" x="0.0" y="0.0" width="310.5" height="30"/>
-                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="27"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hartley '18   &amp;   Sho Sho '19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4I-yO-TvG">
+                                        <rect key="frame" x="40.5" y="0.0" width="230" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="115" translatesAutoresizingMaskIntoConstraints="NO" id="hcO-Jt-LNg" userLabel="bitmoji Stack View">
-                                        <rect key="frame" x="31" y="30" width="249" height="67"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="115" translatesAutoresizingMaskIntoConstraints="NO" id="hcO-Jt-LNg" userLabel="bitmoji Stack View">
+                                        <rect key="frame" x="31" y="22.5" width="249" height="67"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="hart" translatesAutoresizingMaskIntoConstraints="NO" id="kzu-Pe-uDI">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hart" translatesAutoresizingMaskIntoConstraints="NO" id="kzu-Pe-uDI">
                                                 <rect key="frame" x="0.0" y="0.0" width="67" height="67"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="kzu-Pe-uDI" secondAttribute="height" multiplier="1:1" id="Kpw-uN-T2T"/>
@@ -472,7 +469,7 @@ enjoy our app and enjoy your lunch!</string>
                                                     <constraint firstAttribute="width" constant="67" id="gkC-fI-hdp"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="sho" translatesAutoresizingMaskIntoConstraints="NO" id="34W-FN-iEt">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sho" translatesAutoresizingMaskIntoConstraints="NO" id="34W-FN-iEt">
                                                 <rect key="frame" x="182" y="0.0" width="67" height="67"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="34W-FN-iEt" secondAttribute="height" multiplier="67:67" id="2qA-fr-sPK"/>
@@ -487,7 +484,16 @@ enjoy our app and enjoy your lunch!</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="fWE-nu-VNb" firstAttribute="trailing" secondItem="ySW-kd-49p" secondAttribute="trailing" constant="32.5" id="13s-XA-p50"/>
+                            <constraint firstItem="fWE-nu-VNb" firstAttribute="trailing" secondItem="sOZ-HN-Amv" secondAttribute="trailing" constant="16" id="EO3-Nt-rnO"/>
+                            <constraint firstItem="ySW-kd-49p" firstAttribute="top" secondItem="sOZ-HN-Amv" secondAttribute="bottom" constant="10" id="G25-Gr-bk1"/>
+                            <constraint firstItem="sOZ-HN-Amv" firstAttribute="leading" secondItem="fWE-nu-VNb" secondAttribute="leading" constant="16" id="JRy-TM-QEM"/>
+                            <constraint firstItem="fWE-nu-VNb" firstAttribute="trailing" secondItem="5a2-35-bbO" secondAttribute="trailing" constant="20" id="UM3-Gu-bNl"/>
+                            <constraint firstItem="sOZ-HN-Amv" firstAttribute="top" secondItem="3RP-gM-YT7" secondAttribute="bottom" constant="26" id="VcT-xP-iUn"/>
+                            <constraint firstItem="ySW-kd-49p" firstAttribute="leading" secondItem="fWE-nu-VNb" secondAttribute="leading" constant="32" id="byo-ko-O8R"/>
                             <constraint firstItem="3RP-gM-YT7" firstAttribute="leading" secondItem="fWE-nu-VNb" secondAttribute="leading" id="gg7-l8-zcJ"/>
+                            <constraint firstItem="5a2-35-bbO" firstAttribute="top" secondItem="ySW-kd-49p" secondAttribute="bottom" constant="10" id="oZp-df-GgN"/>
+                            <constraint firstItem="5a2-35-bbO" firstAttribute="leading" secondItem="fWE-nu-VNb" secondAttribute="leading" constant="20" id="rns-gk-VqV"/>
                             <constraint firstItem="3RP-gM-YT7" firstAttribute="top" secondItem="fWE-nu-VNb" secondAttribute="top" constant="20" id="vYK-H4-IiG"/>
                             <constraint firstItem="3RP-gM-YT7" firstAttribute="trailing" secondItem="fWE-nu-VNb" secondAttribute="trailing" id="zeK-A9-W0M"/>
                         </constraints>
