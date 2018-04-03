@@ -223,11 +223,23 @@ class TodayViewController: UIViewController {
     
     
     func reset() {
+        //reset soup heart button
         soupHeart.setImage(UIImage(named: "heart outline"), for: UIControlState.normal)
+        soupLike = false
+        
+        //reset grill heart button
         grillHeart.setImage(UIImage(named: "heart outline"), for: UIControlState.normal)
+        grillLike = false
+        
+        //reset entree heart button
         entreeHeart.setImage(UIImage(named: "heart outline"), for: UIControlState.normal)
+        entreeLike = false
+        
+        //reset dessert heart button
         dessertHeart.setImage(UIImage(named: "heart outline"), for: UIControlState.normal)
+        dessertLike = false
     
+        //reset submit button
         self.submitButton.isEnabled = true
         self.submitButton.setTitle("SUBMIT", for: .normal)
     }
