@@ -40,7 +40,11 @@ class TodayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(<#T##animated: Bool##Bool#>)
         
         if let rd = startOfTomorrow {
             if (Date() > rd){
@@ -48,15 +52,15 @@ class TodayViewController: UIViewController {
             }
         }
         
-        
         // print today's date on top of screen
         todayDateLabel.text = "............. 🍴\(DateFormatter.localizedString(from: NSDate() as Date, dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.none))🍴 ............."
-
+        
         // Do any additional setup after loading the view.
         // TODO find day of week
         var dow = Calendar.current.component(.weekday, from: Date())
         print(">>>Day of week:<<<<")
-        print(dayOfWeek[dow])
+        print(dayOfWeek[dow]!)
+        
         //dow=7
         if (dow == 1 || dow == 7) {
             cafeClosedLabel.text = "Café is closed today. Showing menu for Monday:"
@@ -69,8 +73,8 @@ class TodayViewController: UIViewController {
         grillLabel.text = todaysMenu![1]
         entreeLabel.text = todaysMenu![2]
         dessertLabel.text = todaysMenu![3]
-        
     }
+    
     
     func parseMenuHtml() {
         let url = URL(string: "https://www.castilleja.org/page.cfm?p=940953")
