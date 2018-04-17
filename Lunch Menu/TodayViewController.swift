@@ -44,7 +44,7 @@ class TodayViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(<#T##animated: Bool##Bool#>)
+        super.viewDidAppear(animated)
         
         if let rd = startOfTomorrow {
             if (Date() > rd){
