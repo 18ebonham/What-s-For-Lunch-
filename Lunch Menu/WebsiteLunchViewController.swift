@@ -40,7 +40,9 @@ class WebsiteLunchViewController: UIViewController {
         let endMon = htmlContentMon.range(of: "</p>").location
         let foodsForMonday = htmlContentMon.substring(to: endMon)
         let mondayLunch = foodsForMonday.components(separatedBy: "<br />")
-        let mondayLunchText = mondayLunch.joined(separator: "\n")
+        var mondayLunchText = mondayLunch.joined(separator: "\n")
+        mondayLunchText = mondayLunchText.replacingOccurrences(of: "&amp;", with: "&")
+        mondayLunchText = mondayLunchText.replacingOccurrences(of: "&nbsp;", with: " ")
         
         print(mondayLunchText)
         mondayFoodLabel.text = mondayLunchText
@@ -53,7 +55,9 @@ class WebsiteLunchViewController: UIViewController {
         let endTue = htmlContentTue.range(of: "</p>").location
         let foodsForTuesday = htmlContentTue.substring(to: endTue)
         let tuesdayLunch = foodsForTuesday.components(separatedBy: "<br />")
-        let tuesdayLunchText = tuesdayLunch.joined(separator: "\n")
+        var tuesdayLunchText = tuesdayLunch.joined(separator: "\n")
+        tuesdayLunchText = tuesdayLunchText.replacingOccurrences(of: "&amp;", with: "&")
+        tuesdayLunchText = tuesdayLunchText.replacingOccurrences(of: "&nbsp;", with: " ")
         
         print(tuesdayLunchText)
         tuesdayFoodLabel.text = tuesdayLunchText
@@ -66,7 +70,9 @@ class WebsiteLunchViewController: UIViewController {
         let endWed = htmlContentWed.range(of: "</p>").location
         let foodsForWednesday = htmlContentWed.substring(to: endWed)
         let wednesdayLunch = foodsForWednesday.components(separatedBy: "<br />")
-        let wednesdayLunchText = wednesdayLunch.joined(separator: "\n")
+        var wednesdayLunchText = wednesdayLunch.joined(separator: "\n")
+        wednesdayLunchText = wednesdayLunchText.replacingOccurrences(of: "&amp;", with: "&")
+        wednesdayLunchText = wednesdayLunchText.replacingOccurrences(of: "&nbsp;", with: " ")
         
         print(wednesdayLunchText)
         wednesdayFoodlabel.text = wednesdayLunchText
@@ -79,7 +85,9 @@ class WebsiteLunchViewController: UIViewController {
         let endThu = htmlContentThu.range(of: "</td>").location
         let foodsForThursday = htmlContentThu.substring(to: endThu)
         let thursdayLunch = foodsForThursday.components(separatedBy: "<br />")
-        let thursdayLunchText = thursdayLunch.joined(separator: "\n")
+        var thursdayLunchText = thursdayLunch.joined(separator: "\n")
+        thursdayLunchText = thursdayLunchText.replacingOccurrences(of: "&amp;", with: "&")
+        thursdayLunchText = thursdayLunchText.replacingOccurrences(of: "&nbsp;", with: " ")
         
         print(thursdayLunchText)
         thursdayFoodLabel.text = thursdayLunchText
@@ -92,7 +100,9 @@ class WebsiteLunchViewController: UIViewController {
         let endFri = htmlContentFri.range(of: "</td>").location
         let foodsForFriday = htmlContentFri.substring(to: endFri)
         let fridayLunch = foodsForFriday.components(separatedBy: "<br />")
-        let fridayLunchText = fridayLunch.joined(separator: "\n")
+        var fridayLunchText = fridayLunch.joined(separator: "\n")
+        fridayLunchText = fridayLunchText.replacingOccurrences(of: "&amp;", with: "&")
+        fridayLunchText = fridayLunchText.replacingOccurrences(of: "&nbsp;", with: " ")
         
         print(fridayLunchText)
         fridayFoodLabel.text = fridayLunchText

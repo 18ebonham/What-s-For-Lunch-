@@ -6,8 +6,6 @@
 //  Copyright © 2018 Hartley Bonham. All rights reserved.
 //
 
-//HI SHO SHO!!!!
-
 import UIKit
 import WebKit
 
@@ -87,6 +85,7 @@ class TodayViewController: UIViewController {
         var htmlContentWed = urlString as NSString
         var htmlContentThu = urlString as NSString
         var htmlContentFri = urlString as NSString
+
         
         //Monday
         var startMon = htmlContentMon.range(of: "Mon,").location
@@ -94,7 +93,9 @@ class TodayViewController: UIViewController {
         startMon = htmlContentMon.range(of: "Soup:").location
         htmlContentMon = htmlContentMon.substring(from: startMon) as NSString
         let endMon = htmlContentMon.range(of: "</p>").location
-        let foodsForMonday = htmlContentMon.substring(to: endMon)
+        var foodsForMonday = htmlContentMon.substring(to: endMon)
+        foodsForMonday = foodsForMonday.replacingOccurrences(of: "&amp;", with: "&")
+        foodsForMonday = foodsForMonday.replacingOccurrences(of: "&nbsp;", with: " ")
         let mondayLunch = foodsForMonday.components(separatedBy: "<br />")
         weekMenuDict["MON"] = mondayLunch
 
@@ -105,7 +106,9 @@ class TodayViewController: UIViewController {
         startTue = htmlContentTue.range(of: "Soup:").location
         htmlContentTue = htmlContentTue.substring(from: startTue) as NSString
         let endTue = htmlContentTue.range(of: "</p>").location
-        let foodsForTuesday = htmlContentTue.substring(to: endTue)
+        var foodsForTuesday = htmlContentTue.substring(to: endTue)
+        foodsForTuesday = foodsForTuesday.replacingOccurrences(of: "&amp;", with: "&")
+        foodsForTuesday = foodsForTuesday.replacingOccurrences(of: "&nbsp;", with: " ")
         let tuesdayLunch = foodsForTuesday.components(separatedBy: "<br />")
         weekMenuDict["TUE"] = tuesdayLunch
 
@@ -116,7 +119,9 @@ class TodayViewController: UIViewController {
         startWed = htmlContentWed.range(of: "Soup:").location
         htmlContentWed = htmlContentWed.substring(from: startWed) as NSString
         let endWed = htmlContentWed.range(of: "</p>").location
-        let foodsForWednesday = htmlContentWed.substring(to: endWed)
+        var foodsForWednesday = htmlContentWed.substring(to: endWed)
+        foodsForWednesday = foodsForWednesday.replacingOccurrences(of: "&amp;", with: "&")
+        foodsForWednesday = foodsForWednesday.replacingOccurrences(of: "&nbsp;", with: " ")
         let wednesdayLunch = foodsForWednesday.components(separatedBy: "<br />")
         weekMenuDict["WED"] = wednesdayLunch
  
@@ -127,7 +132,9 @@ class TodayViewController: UIViewController {
         startThu = htmlContentThu.range(of: "Soup:").location
         htmlContentThu = htmlContentThu.substring(from: startThu) as NSString
         let endThu = htmlContentThu.range(of: "</td>").location
-        let foodsForThursday = htmlContentThu.substring(to: endThu)
+        var foodsForThursday = htmlContentThu.substring(to: endThu)
+        foodsForThursday = foodsForThursday.replacingOccurrences(of: "&amp;", with: "&")
+        foodsForThursday = foodsForThursday.replacingOccurrences(of: "&nbsp;", with: " ")
         let thursdayLunch = foodsForThursday.components(separatedBy: "<br />")
         weekMenuDict["THU"] = thursdayLunch
 
@@ -138,7 +145,9 @@ class TodayViewController: UIViewController {
         startFri = htmlContentFri.range(of: "Soup:").location
         htmlContentFri = htmlContentFri.substring(from: startFri) as NSString
         let endFri = htmlContentFri.range(of: "</td>").location
-        let foodsForFriday = htmlContentFri.substring(to: endFri)
+        var foodsForFriday = htmlContentFri.substring(to: endFri)
+        foodsForFriday = foodsForFriday.replacingOccurrences(of: "&amp;", with: "&")
+        foodsForFriday = foodsForFriday.replacingOccurrences(of: "&nbsp;", with: " ")
         let fridayLunch = foodsForFriday.components(separatedBy: "<br />")
         weekMenuDict["FRI"] = fridayLunch
 
