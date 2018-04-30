@@ -2,7 +2,6 @@
 //  WebsiteLunchViewController.swift
 //  What's For Lunch
 //
-//  Created by Hartley Bonham on 1/10/18.
 //  Copyright © 2018 Hartley Bonham. All rights reserved.
 //
 
