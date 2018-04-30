@@ -11,14 +11,15 @@ import WebKit
 
 class WebsiteLunchViewController: UIViewController {
 
+    //labels
     @IBOutlet weak var mondayFoodLabel: UILabel!
     @IBOutlet weak var tuesdayFoodLabel: UILabel!
     @IBOutlet weak var wednesdayFoodlabel: UILabel!
     @IBOutlet weak var thursdayFoodLabel: UILabel!
     @IBOutlet weak var fridayFoodLabel: UILabel!
     
-    @IBOutlet weak var websiteLunchView: UIWebView!
     
+    //display lunch for the week
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,7 +44,6 @@ class WebsiteLunchViewController: UIViewController {
         var mondayLunchText = mondayLunch.joined(separator: "\n")
         mondayLunchText = mondayLunchText.replacingOccurrences(of: "&amp;", with: "&")
         mondayLunchText = mondayLunchText.replacingOccurrences(of: "&nbsp;", with: " ")
-        
         print(mondayLunchText)
         mondayFoodLabel.text = mondayLunchText
         
@@ -58,7 +58,6 @@ class WebsiteLunchViewController: UIViewController {
         var tuesdayLunchText = tuesdayLunch.joined(separator: "\n")
         tuesdayLunchText = tuesdayLunchText.replacingOccurrences(of: "&amp;", with: "&")
         tuesdayLunchText = tuesdayLunchText.replacingOccurrences(of: "&nbsp;", with: " ")
-        
         print(tuesdayLunchText)
         tuesdayFoodLabel.text = tuesdayLunchText
         
@@ -73,7 +72,6 @@ class WebsiteLunchViewController: UIViewController {
         var wednesdayLunchText = wednesdayLunch.joined(separator: "\n")
         wednesdayLunchText = wednesdayLunchText.replacingOccurrences(of: "&amp;", with: "&")
         wednesdayLunchText = wednesdayLunchText.replacingOccurrences(of: "&nbsp;", with: " ")
-        
         print(wednesdayLunchText)
         wednesdayFoodlabel.text = wednesdayLunchText
         
@@ -88,7 +86,6 @@ class WebsiteLunchViewController: UIViewController {
         var thursdayLunchText = thursdayLunch.joined(separator: "\n")
         thursdayLunchText = thursdayLunchText.replacingOccurrences(of: "&amp;", with: "&")
         thursdayLunchText = thursdayLunchText.replacingOccurrences(of: "&nbsp;", with: " ")
-        
         print(thursdayLunchText)
         thursdayFoodLabel.text = thursdayLunchText
         
@@ -103,7 +100,6 @@ class WebsiteLunchViewController: UIViewController {
         var fridayLunchText = fridayLunch.joined(separator: "\n")
         fridayLunchText = fridayLunchText.replacingOccurrences(of: "&amp;", with: "&")
         fridayLunchText = fridayLunchText.replacingOccurrences(of: "&nbsp;", with: " ")
-        
         print(fridayLunchText)
         fridayFoodLabel.text = fridayLunchText
         

@@ -11,6 +11,7 @@ import WebKit
 
 class TodayViewController: UIViewController {
     
+    //initiate labels:
     var soupLike = false
     var grillLike = false
     var entreeLike = false
@@ -46,6 +47,7 @@ class TodayViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        //reset for the next day
         if let rd = startOfTomorrow {
             if (Date() > rd){
                 reset()
@@ -67,6 +69,7 @@ class TodayViewController: UIViewController {
             dow = 2
         }
         
+        //display the correct day's lunch
         parseMenuHtml()
         let todaysMenu = weekMenuDict[dayOfWeek[dow]!]
         soupLabel.text = todaysMenu![0]
@@ -76,6 +79,7 @@ class TodayViewController: UIViewController {
     }
     
     
+    //parsing function to get lunch data from casti website
     func parseMenuHtml() {
         let url = URL(string: "https://www.castilleja.org/page.cfm?p=940953")
         let urlString = try! String(contentsOf: url!, encoding: .utf8)
@@ -237,6 +241,7 @@ class TodayViewController: UIViewController {
     }
     
     
+    //reset heart buttons to blank and false
     func reset() {
         //reset soup heart button
         soupHeart.setImage(UIImage(named: "heart outline"), for: UIControlState.normal)

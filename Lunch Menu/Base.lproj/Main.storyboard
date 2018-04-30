@@ -42,7 +42,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jzC-ig-iGn" userLabel="mon Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="306" height="100"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="twn-Gb-heJ">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="twn-Gb-heJ" userLabel="monday label Stack View">
                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="100"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDD-SK-h7e">
@@ -78,7 +78,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uBT-rw-bcz" userLabel="tue Stack View">
                                         <rect key="frame" x="0.0" y="100" width="306" height="100"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="MUO-WM-ulL">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="MUO-WM-ulL" userLabel="tuesday label Stack View">
                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="100"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUw-uL-Mlb">
@@ -114,7 +114,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9bw-BD-eKJ" userLabel="wed Stack View">
                                         <rect key="frame" x="0.0" y="200" width="306" height="100"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="buy-tA-vcT">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="buy-tA-vcT" userLabel="wednesday label Stack View">
                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="100"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBm-7s-8LY">
@@ -153,7 +153,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ByI-XH-XMo" userLabel="thu Stack View">
                                         <rect key="frame" x="0.0" y="300" width="306" height="100"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="262-Sb-E9s">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="262-Sb-E9s" userLabel="thursday label Stack View">
                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="100"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXs-zX-V1d">
@@ -189,7 +189,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bHn-kw-NPZ" userLabel="fri Stack View">
                                         <rect key="frame" x="0.0" y="400" width="306" height="100"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="9MF-08-lic">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="9MF-08-lic" userLabel="friday label Stack View">
                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="100"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEe-Zh-NI9">
@@ -246,7 +246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8SF-j1-TDW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-743" y="751"/>
+            <point key="canvasLocation" x="-735" y="833"/>
         </scene>
         <!--Today-->
         <scene sceneID="yLd-p5-xUI">
@@ -257,45 +257,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="............. 🍴Month Day, Year🍴 ............." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjk-1u-c4Y">
-                                <rect key="frame" x="48" y="79" width="279.5" height="19"/>
+                                <rect key="frame" x="48" y="85" width="279.5" height="19"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cS2-8j-eh5" userLabel="Menu Stack View">
-                                <rect key="frame" x="10" y="158.5" width="355" height="350"/>
+                                <rect key="frame" x="10" y="176.5" width="355" height="314"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="6UN-Ls-q1N" userLabel="label Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="310" height="350"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="314"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Soup: ________________________" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHS-cW-uVG">
-                                                <rect key="frame" x="0.0" y="0.0" width="310" height="72.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Soup: ___________________" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHS-cW-uVG">
+                                                <rect key="frame" x="0.0" y="0.0" width="310" height="36.5"/>
                                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Grill: _________________________" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldE-jN-Psx">
-                                                <rect key="frame" x="0.0" y="142.5" width="310" height="22.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Grill: ____________________" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldE-jN-Psx">
+                                                <rect key="frame" x="0.0" y="106.5" width="310" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Entree: _______________________" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqc-2K-gJZ">
-                                                <rect key="frame" x="0.0" y="235" width="310" height="22.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Entree: __________________" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqc-2K-gJZ">
+                                                <rect key="frame" x="0.0" y="199" width="310" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Dessert: ______________________" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgi-TM-ZjP">
-                                                <rect key="frame" x="0.0" y="327.5" width="310" height="22.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Dessert: _________________" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgi-TM-ZjP">
+                                                <rect key="frame" x="0.0" y="291.5" width="310" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="I3b-kf-69j" userLabel="♡ Stack View">
-                                        <rect key="frame" x="320" y="0.0" width="35" height="350"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="I3b-kf-69j" userLabel="♡ Stack View">
+                                        <rect key="frame" x="320" y="0.0" width="35" height="314"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZy-qX-oGX">
                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
@@ -307,7 +307,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ger-Xw-Y5D">
-                                                <rect key="frame" x="0.0" y="105" width="35" height="35"/>
+                                                <rect key="frame" x="0.0" y="93" width="35" height="35"/>
                                                 <state key="normal" image="heart outline">
                                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -316,7 +316,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoR-Fz-SSJ">
-                                                <rect key="frame" x="0.0" y="210" width="35" height="35"/>
+                                                <rect key="frame" x="0.0" y="186" width="35" height="35"/>
                                                 <state key="normal" image="heart outline">
                                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -325,7 +325,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz9-11-xwT">
-                                                <rect key="frame" x="0.0" y="315" width="35" height="35"/>
+                                                <rect key="frame" x="0.0" y="279" width="35" height="35"/>
                                                 <state key="normal" image="heart outline">
                                                     <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -338,7 +338,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suT-9Q-mwL">
-                                <rect key="frame" x="187.5" y="108" width="0.0" height="0.0"/>
+                                <rect key="frame" x="187.5" y="114" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="16"/>
                                 <color key="textColor" red="0.92018854620000001" green="0.59422647949999996" blue="0.59912848470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -376,7 +376,7 @@
                             <constraint firstItem="Xm8-Gi-r3X" firstAttribute="top" secondItem="yb9-xL-OTW" secondAttribute="top" constant="7" id="o5V-MV-d6x"/>
                             <constraint firstItem="cS2-8j-eh5" firstAttribute="centerX" secondItem="yb9-xL-OTW" secondAttribute="centerX" id="olg-Kg-SZV"/>
                             <constraint firstItem="yb9-xL-OTW" firstAttribute="trailing" secondItem="cS2-8j-eh5" secondAttribute="trailing" constant="10" id="uR0-Kh-YKo"/>
-                            <constraint firstItem="Vjk-1u-c4Y" firstAttribute="top" secondItem="yb9-xL-OTW" secondAttribute="top" constant="59" id="uv4-Xx-1iu"/>
+                            <constraint firstItem="Vjk-1u-c4Y" firstAttribute="top" secondItem="yb9-xL-OTW" secondAttribute="top" constant="65" id="uv4-Xx-1iu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yb9-xL-OTW"/>
                     </view>
@@ -399,7 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3mg-Q5-kic" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-743" y="13"/>
+            <point key="canvasLocation" x="-735" y="-144"/>
         </scene>
         <!--lunchMenu-->
         <scene sceneID="xkT-SS-UI4">
@@ -418,7 +418,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wr7-IQ-4cg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1791" y="363"/>
+            <point key="canvasLocation" x="-1644" y="334"/>
         </scene>
         <!--Wait What Is View Controller-->
         <scene sceneID="zOv-nl-74q">
@@ -444,7 +444,7 @@
                                 <rect key="frame" x="16" y="194" width="343" height="179.5"/>
                                 <string key="text">What's For Lunch is an app designed to give the Castilleja community an easy way to access the lunch menu on their phone. You can ‘heart’ the lunch items that you enjoyed eating each day. This rating system was requested by the kitchen staff and we worked with them to implement it.
 
-enjoy our app and enjoy your lunch!</string>
+Enjoy our app and enjoy your lunch!</string>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -506,7 +506,7 @@ enjoy our app and enjoy your lunch!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBy-y6-f6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1791" y="1145"/>
+            <point key="canvasLocation" x="-1644" y="1177"/>
         </scene>
     </scenes>
     <resources>
