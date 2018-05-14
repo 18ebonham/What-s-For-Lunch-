@@ -16,6 +16,7 @@ class TodayViewController: UIViewController {
     var grillLike = false
     var entreeLike = false
     var dessertLike = false
+    var scoreNumber = 0
     
     var timer: Timer!
     var startOfTomorrow: Date!
@@ -35,12 +36,20 @@ class TodayViewController: UIViewController {
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var cafeClosedLabel: UILabel!
 
+    @IBOutlet weak var score: UILabel!
+    
+    
+    
     @IBOutlet weak var todayDateLabel: UILabel!
     var weekMenuDict = [String:[String]]()
     var dayOfWeek = [1:"SUN",2:"MON",3:"TUE",4:"WED",5:"THU",6:"FRI",7:"SAT"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let defaults = UserDefaults.standard
+        scoreNumber = defaults.integer(forKey: "Score")
+        score.text = "\(scoreNumber)"
         
     }
     
@@ -206,7 +215,14 @@ class TodayViewController: UIViewController {
     
     //submit button
     @IBAction func submitButton(_ sender: Any) {
-        print("Submitting repponse")
+        
+        //increase score
+        scoreNumber = scoreNumber+1
+        score.text = "\(scoreNumber)"
+        let defaults = UserDefaults.standard
+        defaults.set(scoreNumber, forKey: "Score")
+        
+        print("Submitting response")
         var urlSoFar = "https://docs.google.com/forms/d/e/1FAIpQLScbi6oEupJMEStLrzynW5n4yAKun_wDf63J3lDC6h1cXy2YAg/formResponse?ifq&"
         if soupLike {
             urlSoFar += "entry.1500086948=Soup&"

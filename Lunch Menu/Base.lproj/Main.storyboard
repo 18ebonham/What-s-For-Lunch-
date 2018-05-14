@@ -359,6 +359,23 @@
                                     <constraint firstAttribute="width" secondItem="Xm8-Gi-r3X" secondAttribute="height" multiplier="375:58" id="PVw-CD-hqy"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3n-3x-S7b" userLabel="Score Stack View">
+                                <rect key="frame" x="159" y="109" width="56.5" height="19"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGc-74-rn6">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="19"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2o-r8-Lbz">
+                                        <rect key="frame" x="48" y="0.0" width="8.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                        <color key="textColor" red="0.62217527630000002" green="0.77436840529999995" blue="0.91184157129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -366,6 +383,7 @@
                             <constraint firstItem="cS2-8j-eh5" firstAttribute="leading" secondItem="yb9-xL-OTW" secondAttribute="leading" constant="10" id="ANO-9O-IUM"/>
                             <constraint firstItem="cS2-8j-eh5" firstAttribute="centerX" secondItem="jKW-A7-7cI" secondAttribute="centerX" id="Cdd-6D-1RA"/>
                             <constraint firstItem="yb9-xL-OTW" firstAttribute="bottom" secondItem="qAh-Z4-ouL" secondAttribute="bottom" constant="14" id="Ewy-Ba-Euw"/>
+                            <constraint firstItem="o3n-3x-S7b" firstAttribute="top" secondItem="Vjk-1u-c4Y" secondAttribute="bottom" constant="5" id="W2r-Q8-m6x"/>
                             <constraint firstItem="suT-9Q-mwL" firstAttribute="centerX" secondItem="jKW-A7-7cI" secondAttribute="centerX" id="WIM-91-mdc"/>
                             <constraint firstItem="Vjk-1u-c4Y" firstAttribute="centerX" secondItem="jKW-A7-7cI" secondAttribute="centerX" id="Xad-OA-mFe"/>
                             <constraint firstItem="suT-9Q-mwL" firstAttribute="top" secondItem="Vjk-1u-c4Y" secondAttribute="bottom" constant="10" id="ddT-rn-b2U"/>
@@ -373,6 +391,7 @@
                             <constraint firstItem="Xm8-Gi-r3X" firstAttribute="leading" secondItem="yb9-xL-OTW" secondAttribute="leading" id="fF9-K5-z6z"/>
                             <constraint firstItem="Xm8-Gi-r3X" firstAttribute="trailing" secondItem="yb9-xL-OTW" secondAttribute="trailing" id="fOT-8W-xSN"/>
                             <constraint firstItem="qAh-Z4-ouL" firstAttribute="centerX" secondItem="jKW-A7-7cI" secondAttribute="centerX" id="fd9-Bx-dMw"/>
+                            <constraint firstItem="o3n-3x-S7b" firstAttribute="centerX" secondItem="jKW-A7-7cI" secondAttribute="centerX" id="giZ-bX-1fD"/>
                             <constraint firstItem="Xm8-Gi-r3X" firstAttribute="top" secondItem="yb9-xL-OTW" secondAttribute="top" constant="7" id="o5V-MV-d6x"/>
                             <constraint firstItem="cS2-8j-eh5" firstAttribute="centerX" secondItem="yb9-xL-OTW" secondAttribute="centerX" id="olg-Kg-SZV"/>
                             <constraint firstItem="yb9-xL-OTW" firstAttribute="trailing" secondItem="cS2-8j-eh5" secondAttribute="trailing" constant="10" id="uR0-Kh-YKo"/>
@@ -391,6 +410,7 @@
                         <outlet property="entreeLabel" destination="bqc-2K-gJZ" id="cTg-FO-v1n"/>
                         <outlet property="grillHeart" destination="Ger-Xw-Y5D" id="w5J-hN-kaF"/>
                         <outlet property="grillLabel" destination="ldE-jN-Psx" id="ZEi-Jh-zFr"/>
+                        <outlet property="score" destination="y2o-r8-Lbz" id="uL9-dd-uz5"/>
                         <outlet property="soupHeart" destination="fZy-qX-oGX" id="PNm-wl-PM5"/>
                         <outlet property="soupLabel" destination="rHS-cW-uVG" id="XoF-bb-Xhb"/>
                         <outlet property="submitButton" destination="qAh-Z4-ouL" id="mMO-OT-xGr"/>
@@ -506,7 +526,7 @@ Enjoy our app and enjoy your lunch!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBy-y6-f6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1644" y="1177"/>
+            <point key="canvasLocation" x="-1644" y="1176.1619190404799"/>
         </scene>
     </scenes>
     <resources>
